@@ -171,6 +171,184 @@
             android:textColor="@color/grey_hint"/>
     </LinearLayout>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_satu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_2"
+        app:layout_constraintRight_toRightOf="parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_black"
+            android:padding="20dp">
 
+            <ImageView
+                android:id="@+id/iv_image_konten_satu"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/image_konten_satu"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_konten_satu"
+                android:layout_width="210dp"
+                android:layout_height="65dp"
+                android:text="Bagaimana cara menggunakan sendok dengan benar"
+                android:textColor="@color/grey_hint"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_image_konten_satu"
+                app:layout_constraintHorizontal_bias="0"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_image_konten_satu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_konten_satu"
+                app:layout_constraintHorizontal_bias="0">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="pengaturan"
+                    android:textSize="8sp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_button_konten"
+                    android:textAllCaps="false"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_baseline_eye_24"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="175K"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/grey_hint"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_baseline_thumb_up_24"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14K"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey_hint"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_satu"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_black"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/iv_image_konten_dua"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/image_konten_satu"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_konten_dua"
+                android:layout_width="210dp"
+                android:layout_height="65dp"
+                android:text="Bagaimana cara menggunakan sendok dengan benar"
+                android:textColor="@color/grey_hint"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_image_konten_dua"
+                app:layout_constraintHorizontal_bias="0"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_image_konten_dua"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_konten_dua"
+                app:layout_constraintHorizontal_bias="0">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="pengaturan"
+                    android:textSize="8sp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_button_konten"
+                    android:textAllCaps="false"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_baseline_eye_24"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="175K"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/grey_hint"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_baseline_thumb_up_24"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14K"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey_hint"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
