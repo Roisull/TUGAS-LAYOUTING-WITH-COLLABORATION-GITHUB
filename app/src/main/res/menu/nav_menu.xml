@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/untuk_anda"
+        android:icon="@drawable/ic_baseline_perm_identity_24"
+        android:title="Untuk Anda"  />
+    <item
+        android:id="@+id/judul"
+        android:icon="@drawable/ic_baseline_public_24"
+        android:title="Judul" />
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/ic_baseline_star_border_24"
+        android:title="Favorit" />
+    <item
+        android:id="@+id/kios"
+        android:icon="@drawable/ic_baseline_legend_toggle_24"
+        android:title="Kios" />
+</menu>
