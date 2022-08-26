@@ -26,6 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Kios"
+                android:textStyle="bold"
                 android:layout_weight="10"
                 android:gravity="center"
                 android:textColor="@color/black"
@@ -50,6 +51,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:text="Hiburan"
+            android:textStyle="bold"
             android:layout_margin="16dp"
             android:textSize="18sp"/>
 
@@ -131,8 +133,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="Hiburan"
+            android:text="Makanan dan Minuman"
             android:layout_margin="16dp"
+            android:textStyle="bold"
             android:textSize="18sp"/>
 
         <HorizontalScrollView
