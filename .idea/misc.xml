@@ -6,6 +6,7 @@
         <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/drawable/background_edit_text.xml" value="0.1385" />
         <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/drawable/bg_button_konten.xml" value="0.1385" />
         <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.1385" />
+        <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/drawable/fab_arrow.xml" value="0.1385" />
         <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/font/poppins_semibol.xml" value="0.24974358974358973" />
         <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
         <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/layout/background_hitam_roisul.xml" value="0.22" />
@@ -20,7 +21,7 @@
         <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/layout/layout_dua_padi.xml" value="0.21388888888888888" />
         <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/layout/layout_dua_page5.xml" value="0.22447916666666667" />
         <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/layout/layout_dua_zahir.xml" value="0.22447916666666667" />
-        <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/layout/layout_satu_malik.xml" value="0.22447916666666667" />
+        <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/layout/layout_satu_malik.xml" value="0.16" />
         <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/layout/layout_satu_page_satu.xml" value="0.18" />
         <entry key="..\:/me/semester 5/latihanLayoutCollaborationGithub/app/src/main/res/menu/nav_menu.xml" value="0.22447916666666667" />
       </map>
@@ -31,5 +32,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.16" />
+      </ProjectState>
+    </option>
   </component>
 </project>

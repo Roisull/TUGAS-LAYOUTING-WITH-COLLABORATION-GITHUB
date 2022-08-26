@@ -7,61 +7,53 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="170dp">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="76dp"
             android:src="@drawable/navbar_insert" />
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="730dp"
-        android:layout_marginTop="32dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="320dp"
             android:src="@drawable/img_1_4" />
     </FrameLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
         android:text="Foto: Istimewa"
-        android:textSize="24sp" />
+        android:textSize="15sp" />
 
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:justificationMode="inter_word"
-        android:text="@string/l2_page4"
-        android:textColor="@color/black"
-        android:textSize="32sp" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:justificationMode="inter_word"
-        android:textColor="@color/black"
-        android:textSize="32sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:justificationMode="inter_word"
+            android:text="@string/l2_page4"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:layout_gravity="end|bottom"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="#981212"
-        android:src="@drawable/fab_arrow"
-        app:fabCustomSize="96dp"
-        app:maxImageSize="72dp"
-        app:tint="@color/white" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/fab_arrow" />
+    </FrameLayout>
 
 
 </LinearLayout>
