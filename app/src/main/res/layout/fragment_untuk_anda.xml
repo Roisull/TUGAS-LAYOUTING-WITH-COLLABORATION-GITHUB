@@ -1,14 +1,243 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".UntukAndaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/iv_search_google"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_margin="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_logo_google"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/logo_google"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/iv_search_google"
+            app:layout_constraintRight_toLeftOf="@+id/iv_logo_account"/>
+
+        <ImageView
+            android:id="@+id/iv_logo_account"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/logo_account"
+            android:layout_margin="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_rangkuman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo_google"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tv_rangkuman_untuk_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Rangkuman untuk Chairul"
+                android:textColor="@color/blackOn"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 artikel teratas sekarang"
+                android:layout_below="@+id/tv_rangkuman_untuk_"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_cuaca"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/image_cuaca_salju"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-22\u2103"
+                android:layout_below="@+id/iv_cuaca"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/blackOn"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_rangkuman"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/image_light_highlight"
+            app:layout_constraintTop_toBottomOf="@+id/rl_rangkuman"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_urutan_konten_satu"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_rangkuman">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_nomer_urut_konten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/blue_primary"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_logo_insertlive"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/logo_insertlive"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/tv_nomer_urut_konten"/>
+
+                <TextView
+                    android:id="@+id/tv_judul_konten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kapolri Benarkan Isu Brigadir J Lecehkan Istri Ferdy Sambo, Tapi..."
+                    android:layout_below="@+id/tv_nomer_urut_konten"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/blackOn"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/tv_waktu_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_judul_konten"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="4 jam yang lalu" />
+
+                <ImageView
+                    android:id="@+id/iv_simbol_more"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="80dp"
+                    android:layout_toLeftOf="@+id/iv_simbol_more"
+                    android:src="@drawable/ic_baseline_konteks" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_urutan_konten_dua"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_urutan_konten_satu">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_nomer_urut_konten_dua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="2"
+                    android:textColor="@color/blue_primary"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_logo_insertlive_dua"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/logo_insertlive"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/tv_nomer_urut_konten_dua"/>
+
+                <TextView
+                    android:id="@+id/tv_judul_konten_dua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kapolri Benarkan Isu Brigadir J Lecehkan Istri Ferdy Sambo, Tapi..."
+                    android:layout_below="@+id/tv_nomer_urut_konten_dua"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/blackOn"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/tv_waktu_upload_dua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_judul_konten_dua"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="10 jam yang lalu" />
+
+                <ImageView
+                    android:id="@+id/iv_simbol_more_dua"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="80dp"
+                    android:layout_toLeftOf="@+id/iv_simbol_more_dua"
+                    android:src="@drawable/ic_baseline_konteks" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
